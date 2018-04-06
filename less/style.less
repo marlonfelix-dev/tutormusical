@@ -1,0 +1,31 @@
+/* Import other CSS files */
+@import url('../css/bootstrap.min.css');
+@import url('../css/fonts.css');
+@import url('../css/slick.css');
+
+/* Import other LESS files */
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+
+/* Import pages LESS files */
+@import '_page-home';
+
+/* Import elements LESS files */
+@import 'elements/generals';
+@import 'elements/header';
+@import 'elements/footer';
+
+/* Body */ 
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	background-color: white;
+	overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+	text-rendering: optimizeSpeed;
+}
+* {
+	outline: none;
+}

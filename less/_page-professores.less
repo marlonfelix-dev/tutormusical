@@ -1,6 +1,6 @@
 /* sliderhome */
 
-	#sliderHome {
+	#topo {
 		background-color: @clr-blue;
 		position: relative;
 		.slide {
@@ -12,13 +12,13 @@
 			.caption {
 				position: relative;
 				z-index: 1;
+				max-width: 45%;
 				h2 {
 					color: @clr-white;
 					font-size: 45px;
 				    font-family: 'GloberxBold', sans-serif;
 				    font-weight: 600;
-				    max-width: 70%;
-				    line-height: 65px;
+				    line-height: 45px;
 				    margin-bottom: 20px;
 				    span {
 				    	color: #3ff8ff;
@@ -33,36 +33,7 @@
 				    letter-spacing: 0.5px;
 				    font-family: Roboto,sans-serif;
 				    font-weight: 200;
-				    max-width: 60%;
 				    margin-bottom: 40px;
-				}
-				.search {
-				    max-width: 590px;
-				    background: #fff;
-				    border-radius: 30px;
-				    height: 55px;
-				    form {
-					    display: flex;
-					    justify-content: space-between;
-					    align-items: center;
-					    height: 55px;
-					    padding: 0 5px;
-					    .input {
-					    	width: 40%;
-						    input {
-						    	width: 100%;
-						    	height: 50px;
-						    	padding: 0 15px;
-						    	background-color: transparent;
-						    	border:transparent;
-						    }
-					    	&.location {
-					    		input {
-					    			padding-left: 40px;
-					    		}
-					    	}
-					    }
-				    }
 				}
 			}
 			.img {
@@ -75,7 +46,6 @@
 				content: "";
 				position: absolute;
 				.grd-primary;
-				opacity: 0.9;
 				left: 0;
 				right: 0;
 				bottom: 0;
@@ -317,9 +287,11 @@
 	}
 
 
-/* depoimentos */
-	#testimonials {
-		margin-top: 40px;
+/* perguntas e respostas */
+	#faq {
+		background-color: #f1f1f1;
+		padding: 40px 0;
+		margin: 40px 0;
 		position: relative;
 		.flex-wrapper {
 		    .carousel {

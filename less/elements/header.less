@@ -22,6 +22,7 @@
 					li{
 						display: inline-block;
 						margin: 0 15px;
+						position: relative;
 						a {
 							color: #222;
 							font-family: 'Roboto', sans-serif;
@@ -31,6 +32,19 @@
 							transition: all 500ms ease;
 							&:hover {
 								color: @clr-green;
+							}
+						}
+						&.current {
+							a {
+								color: @clr-primary;
+								&::before {
+									content: "";
+								    position: absolute;
+								    height: 4px;
+								    width: 100%;
+								    background: @clr-primary;
+								    bottom: -39px;
+								}
 							}
 						}
 					}
